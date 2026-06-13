@@ -19,9 +19,21 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  image_path: assets/icon/app_icon.png
+  android: true
+  ios: false
+  windows:
+    generate: true
+    image_path: assets/icon/app_icon.png
+    icon_size: 256
 
 # NOTE: version constraints are sensible defaults. After downloading, run
 #   flutter pub get
